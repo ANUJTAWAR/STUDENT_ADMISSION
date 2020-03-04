@@ -11,7 +11,7 @@ public class AddmissionDetails {
 		Scanner scan=new Scanner(System.in);	
 		System.out.println("------------------------------------------------------------------------");
 		System.out.println("\t\t\tWELCOME TO INSTITUTE");
-		System.out.println("------------------------------------------------------------------------");
+		System.out.println("-------------------------------------------------------------------------------");
 		System.out.println("01 - ADDMISSION_REGISTRATION");
 		System.out.println("02 - STUDENT_DETAILS");
 		System.out.println("03 - EXIT");
