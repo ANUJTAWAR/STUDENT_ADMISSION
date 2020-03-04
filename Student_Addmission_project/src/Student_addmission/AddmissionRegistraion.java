@@ -29,7 +29,24 @@ public class AddmissionRegistraion extends Branches {
 			    System.out.println("------------------------------------------------------------------------");
 			    Check_Name=true;
 		     }}
-	 boolean Check_Gender=true;
+	 
+	boolean Check_age=true;
+	while(Check_age)
+	  {
+		 try{
+			  System.out.println(" ENTER AGE -:");
+		      int Student_Age=scan.nextInt();
+		      sd.setStudent_Age(Student_Age);
+		      scan.nextLine();
+		      Check_age=false; 
+		    }
+		catch(Exception e) {
+			scan.nextLine();
+			System.out.println("INVALID AGE TYPE");
+			Check_age=true;
+		 }
+	   }
+	boolean Check_Gender=true;
 	 while(Check_Gender)
 		{
 		    try{
@@ -51,22 +68,6 @@ public class AddmissionRegistraion extends Branches {
 		    	Check_Gender=true;
 		    }
 	    }
-	boolean Check_age=true;
-	while(Check_age)
-	  {
-		 try{
-			  System.out.println(" ENTER AGE -:");
-		      int Student_Age=scan.nextInt();
-		      sd.setStudent_Age(Student_Age);
-		      scan.nextLine();
-		      Check_age=false; 
-		    }
-		catch(Exception e) {
-			scan.nextLine();
-			System.out.println("INVALID AGE TYPE");
-			Check_age=true;
-		 }
-	   }
 	boolean Check_Mobile=true;
 	while(Check_Mobile) 
 	  {
@@ -98,9 +99,9 @@ public class AddmissionRegistraion extends Branches {
 		{
 		 try{
 			 System.out.println(" ENTER ADDRESS -:");
-			 scan.nextLine();
+			scan.nextLine();
 			 String Student_Address=scan.nextLine();
-			 if(Student_Address.length()>=10 && Student_Address.length()<=30) {
+			 if(Student_Address.length()>=10 && Student_Address.length()<=50) {
         			 sd.setStudent_Address(Student_Address);
         			 Check_Address=false;}
 			 else {

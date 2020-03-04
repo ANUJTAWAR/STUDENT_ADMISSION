@@ -6,7 +6,7 @@ package Student_addmission;
 	    String invalidGenderException() {
 			return "Wrong Type GENDR should Be In MALE ,FEMALE & OTHER";}
 	    String invalidAddressException() {
-	    	return "Wrong Type ADDRESS should Be In Range 40<name>10";}
+	    	return "Wrong Type ADDRESS should Be In Range 50<name>10";}
 		String invalidMobileNoException() {
-			return "Wrong Type MOBILE_NO should Be In Range 40<name>10";}
+			return "Wrong Type MOBILE_NO should Be In Range 10 VALUES";}
 }
